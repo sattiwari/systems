@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 		printf("hello, I am child (pid: %d)\n", (int) getpid());
 	} else {
 		int wc = wait(NULL);
-		printf("hello, I am parent of %d (pid: %d)\n", rc, (int) getpid());
+		printf("hello, I am parent of %d (wc: %d) (pid: %d)\n", rc, wc, (int) getpid());
 	}
 	return 0;
 }
